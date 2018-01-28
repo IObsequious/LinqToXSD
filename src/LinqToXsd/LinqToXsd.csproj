@@ -1,0 +1,37 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <IncludeCommonReferences>true</IncludeCommonReferences>
+  </PropertyGroup>
+
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+
+
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LinqToXsd</RootNamespace>
+    <AssemblyName>LinqToXsd</AssemblyName>
+  </PropertyGroup>
+
+
+
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+
+
+
+  <ItemGroup>
+    <Compile Include="update.cs" />
+    <Compile Include="XObjectsGenerator.cs" />
+  </ItemGroup>
+
+
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xml.Schema.Linq\Xml.Schema.Linq.csproj" />
+  </ItemGroup>
+</Project>

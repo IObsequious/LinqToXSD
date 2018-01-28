@@ -1,0 +1,63 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <IncludeCommonReferences>true</IncludeCommonReferences>
+  </PropertyGroup>
+
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+
+
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Xml.Schema.Linq</RootNamespace>
+    <AssemblyName>Xml.Schema.Linq</AssemblyName>
+  </PropertyGroup>
+
+
+
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+
+
+
+  <ItemGroup>
+    <Compile Include="API\ContentModel.cs" />
+    <Compile Include="API\FsmXObjects.cs" />
+    <Compile Include="API\Interfaces.cs" />
+    <Compile Include="API\XObjects.cs" />
+    <Compile Include="API\XObjectsQueryExtension.cs" />
+    <Compile Include="API\XObjectsSimpleType.cs" />
+    <Compile Include="ClrAnnotation.cs" />
+    <Compile Include="ClrPropertyInfo.cs" />
+    <Compile Include="ClrSimpleTypeInfo.cs" />
+    <Compile Include="ClrTypeInfo.cs" />
+    <Compile Include="CodeDomHelper.cs" />
+    <Compile Include="CompiledFacets.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="FacetChecker.cs" />
+    <Compile Include="FSM.cs" />
+    <Compile Include="FSMGenerator.cs" />
+    <Compile Include="FXT\Base.cs" />
+    <Compile Include="FXT\Deanonymize.cs" />
+    <Compile Include="FXT\DmlExtensions.cs" />
+    <Compile Include="FXT\Linq2Xsd.cs" />
+    <Compile Include="FXT\QueryExtensions.cs" />
+    <Compile Include="NameMangler.cs" />
+    <Compile Include="NamespaceList.cs" />
+    <Compile Include="PropertyBuilder.cs" />
+    <Compile Include="SimpleTypeCodeDomHelper.cs" />
+    <Compile Include="SimpleTypeValidator.cs" />
+    <Compile Include="SOMQueryExtensions.cs" />
+    <Compile Include="TypeBuilder.cs" />
+    <Compile Include="TypesToCodeDom.cs" />
+    <Compile Include="XmlComplianceUtil.cs" />
+    <Compile Include="XmlConvert.cs" />
+    <Compile Include="XObjectException.cs" />
+    <Compile Include="XObjectsSettings.cs" />
+    <Compile Include="XsdToTypesConverter.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <IncludeMSBuildTaskReferences>true</IncludeMSBuildTaskReferences>
+    <IncludeCommonReferences>true</IncludeCommonReferences>
+  </PropertyGroup>
+
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+
+
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XOTask</RootNamespace>
+    <AssemblyName>XOTask</AssemblyName>
+  </PropertyGroup>
+
+
+
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+
+
+
+  <ItemGroup>
+    <Compile Include="LinqToXsdTask.cs" />
+  </ItemGroup>
+
+
+
+
+  <ItemGroup>
+    <None Include="LinqToXsd.targets" />
+  </ItemGroup>
+</Project>
